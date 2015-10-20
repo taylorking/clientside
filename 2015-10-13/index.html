@@ -1,0 +1,28 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>
+      Heat Index Table</title>
+  </head>
+  <body onload="init()">
+    <fieldset>
+      <legend>Min/Max</legend>
+      <table>
+        <tr> 
+          <td>Minimum Temperature:</td><td><input name="minTempBox" type="text" value="80" ></td>
+          <td>Maximum Temperature:</td><td><input name="maxTempBox" type="text" value="110" ></td>
+        </tr>
+        <tr>
+          <td>Minimum Humidity:</td><td><input name="minHumidityBox" type="text" value="40" ></td>
+          <td>Maximum Humidity:</td><td><input name="maxHumidityBox" type="text" value="90" ></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="Create Heat Index Table" id="createBtn"></td>
+        </tr>
+      </table>
+    </fieldset>
+    <div id="table-container">  
+    </div> 
+  </body>
+  <script type="text/javascript" src="heatindextable.js"></script>
+</html>

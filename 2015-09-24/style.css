@@ -1,0 +1,19 @@
+input[type="text"]:focus, textarea{
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #d1d1d1;
+}
+ul {
+  background-color: lightGray;
+}
+ul > li > a{
+  color:black;
+}
+ul > li > a:hover {
+  color:magenta;
+}
+.acme_link:hover {
+  cursor:crosshair;
+}
+.invisiblefield {
+  visibility:hidden;
+}

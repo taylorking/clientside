@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Appalachian State : Shibboleth : Single Sign-On</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="copyright" content="Copyright 2012 Appalachian State University. All rights reserved." />
+<meta name="revisit-after" content="5 days" />
+<link type="text/css" rel="stylesheet" media="all" href="/idp/css/font-awesome.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/idp/css/grid16-960.css"/>
+<link type="text/css" rel="stylesheet" media="all" href="/idp/css/shib.css"/>
+
+
+
+</head>
+
+<body onLoad="document.forms['login_form']['j_username'].focus(); if (typeof(wayf_doAutoResize) == 'function'){wayf_doAutoResize();}">
+
+<div id="page" class="page">
+    <div id="page-inner" class="page-inner">
+  
+          <div id="branding-group-wrapper" class="branding-group-wrapper full-width">
+            <div id="branding-group" class="branding-group row grid16-16">
+              <div id="asu-logo" class="asu-logo row nested grid16-8">
+                <div id="asu-logo-inner" class="asu-logo-inner clearfix"><a href="http://appstate.edu" title="Appalachian State University"><img src="/idp/images/appstate-logo.png" alt="Appalachian State University"></a></div>
+              </div>
+              <div id="search-box" class="search-box row nested grid16-8">
+                <div id="search-box-inner" class="search-box-inner clearfix">
+                      <form action="http://gb1.appstate.edu/search" method="get">
+                      <label for="q">Search:</label>
+                      <input type="text" value="" class="txtbox" name="q" id="q">
+                      <input type="hidden" value="" name="sitesearch">
+                      <input type="submit" value=" Search " name="sa">
+                      <input type="hidden" value="0" name="entqr">
+                      <input type="hidden" value="1" name="ud">
+                      <input type="hidden" value="date:D:L:d1" name="sort">
+                      <input type="hidden" value="xml_no_dtd" name="output">
+                      <input type="hidden" value="UTF-8" name="oe">
+                      <input type="hidden" value="UTF-8" name="ie">
+                      <input type="hidden" value="default_frontend" name="client">
+                      <input type="hidden" value="default_frontend" name="proxystylesheet">
+                      <input type="hidden" value="default_collection" name="site">
+                    </form>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <!-- header-top row: width = grid_width -->    
+    
+          <!-- main row: width = grid_width -->
+          <div id="main-wrapper" class="main-wrapper full-width">
+            <div id="main" class="main row grid16-16">
+            	<h2 class="title">Shibboleth Single Sign-On</h2>
+
+            	<div id="content-group" class="content-group row nested grid16-6">
+                  
+                  
+	    			<form id="login_form" class="signon" action="/idp/Authn/UserPassword" method="post" name="login_form">
+				  
+                     
+                         <label class="form-input" for="UserID">
+                          <b>UserID (email and workstation login):</b><br />
+                         <input type="text" name="j_username" accesskey="o" tabindex="1" value="" class="input">
+                         <br />
+                         </label>
+                         <label class="form-input" for="Password"><br />
+                            <b>Password:</b> <br />
+                         <input type="password" name="j_password" tabindex="2" value="" class="input">
+                         <br />
+                         </label>
+                         <label class="login_button">
+                         <br />
+                         <input id="action" class="button" type="submit" name="Sign In" accesskey="S" tabindex="3" value="Sign In" />
+                         </label>
+                     </form><!-- /#login_form -->
+            
+                  <p class="small">Forgot your  <a href="https://password.appstate.edu/pswdchgform/">username or password</a>?</p>
+                  <p class="small">
+                      For assistance please call Technical Support:<br />
+828-262-6266, available 8am-5pm Mon-Fri<br />
+                  </p>
+            	</div>
+                
+                <div id="sidebar-last" class="sidebar-last row nested grid16-10">
+                    <h3>Do Not Bookmark This Page</h3>
+                    <p>Shibboleth works by authenticating your Appalachian ID and password, and then redirecting you back to the service you came from. If you bookmark this page, Shibboleth won't know which service to send you back to, and will display an error.<br />
+                    <br />
+                    <span class="alert">IMPORTANT</span> To protect your personal information, you must close every instance of this browser that is open on your computer when you log out. </p>
+</div> 
+                                
+            </div><!-- /main -->
+          </div><!-- /main-wrapper -->
+          
+          <!-- footer row: width = grid_width -->
+          <div id="footer-wrapper" class="footer-wrapper full-width">
+              <div id="footer" class="footer row grid16-16">
+              
+                  <div class="nested">
+                    <address>Appalachian State University<br>Boone , NC 28208<br>Phone: 828-262-2232<br /></address>
+                    <p class="small">© 2012 Appalachian State University. All rights reserved.</p>    
+                  </div>
+                  
+                  <a class="right" href="http://appstate.edu" title="Appalachian State University"><img src="/idp/images/appalachian-logo.png" alt="Appalachian State University"></a>
+                  
+              </div><!-- /footer -->
+          </div><!-- /footer-wrapper -->
+          
+    </div><!-- /page-inner -->
+</div><!-- /page -->
+			
+</body>
+</html>

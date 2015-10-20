@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>
+      Sample contact form</title>
+  </head>
+  <body>
+    <h1>Sample Contact Form</h1> 
+    <p>What is the topic of your message?<br/>
+    <form action="http://student.cs.appstate.edu/crr/3440/homework/h3/contact/" method="get">
+      <input type="radio" name="regarding" value="Performers"/><label>Performers&nbsp;</label>
+      <input type="radio" name="regarding" value="Venue"/><label>Venue&nbsp;</label>
+      <input type="radio" name="regarding" value="Vendors"/><label>Vendors&nbsp;</label>
+      <input type="radio" name="regarding" value="Volunteers"/><label>Volunteers&nbsp;</label>
+      <input type="radio" name="regarding" value="Sponsors"/><label>Sponsors&nbsp;</label>
+      <input type="radio" name="regarding" value="Lodging"/><label>Lodging&nbsp;</label>
+      <input type="radio" name="regarding" value="Other"/><label>Other</label>
+      <fieldset>  
+  <table>
+      <tr>
+        <td><label>Name: </label></td>
+        <td><input type="text" name="name" required/></td>
+      </tr>
+      <tr>
+        <td><label>Email: </label></td>
+        <td><input type="email" name="email" required/></td>
+      </tr>
+      <tr>
+        <td><label>Phone: </label></td>
+        <td><input type="tel" name="phone" required/></td>
+      </tr>
+      <tr>
+        <td><label>Date: </label></td>
+        <td><input type="date" name="date"/></td>
+      </tr>
+      <tr>
+        <td>
+          <label>Your role: </label>
+        </td>
+        <td>
+        <select name="role">
+          <option value="patron">Patron</option>
+          <option value="vendor">Vendor</option>
+          <option value="employee">Employee</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="performer">Performer</option>
+          <option value="other">Other</option>
+        </select>
+    </td>
+      </tr>
+    </table>
+  </fieldset>
+    <br/>
+    Message:</label><br/>
+        <input type="textarea" rows="5" cols="50" name="message"/>
+        
+      <input type="hidden" name="source" value="webform"/>
+      <br/><br/>
+      <input type="submit" value="Send Message"/>&nbsp;&nbsp;<input type="reset" value="Clear Form"/>
+  </form>
+  <p>
+    http://student.cs.appstate.edu/crr/3440/homework/h3/contact/?regarding=Venue&amp;name=taylor&amp;email=kingtb%40appstate.edu&amp;phone=7048776125&amp;date=2015-12-31&amp;role=vendor&amp;message=&amp;source=webform
+  </p>
+  <p>
+    The way that http GET works is that each of the form parameters are passed directly as the URL rather than in the header as with POST. Each of these parameters corresponds to an &lt;input/&gt; element on the form. 
+  </p>
+  </body>
+</html>

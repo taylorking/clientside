@@ -1,0 +1,21 @@
+body {
+  background-color:#99CCFF;
+}
+.redColor {
+  color:red;
+}
+.blueColor {
+  color:blue;
+}
+td {
+  background-color:gray;
+  font-family: sans-serif;
+  font-size:100px;
+  height:200px;
+  width:200px;
+  text-align:center; 
+  vertical-align:center;
+}
+p.sans {
+  font-family: sans-serif;
+}

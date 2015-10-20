@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)http://student.cs.appstate.edu/crr/3440/homework/classwork2014-09-30/classwork2014-09-30Key1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Positioning Classwork</title>
+<style>
+* {
+   margin: 0px;
+   padding: 0px;
+}
+body {
+   background-color: #ECECEC;
+   font-weight: bold;
+   font-family: Tahoma, Geneva, sans-serif;
+   color: #FFF;
+   text-align: center;
+   line-height: 24px;
+
+}
+#wrapper {
+   background-color: #FFF;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   width: 800px;
+   height: 800px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#holder {
+  position:relative;
+  height:100%;
+  width:100%;
+}
+#red, #green, #blue, #purple, #footer {
+  height : 150px;
+   width : 380px;
+   margin : 10px;
+}
+#red {
+   background-color: #900;
+    position: absolute;
+  top:0px;
+  left:0px;
+}
+#green {
+   background-color: #090;
+   position: absolute;
+   top:0px;
+   right:0px;
+}
+#blue {
+  left:0px;
+  bottom:0px;
+   background-color: #00F;
+   position: absolute;
+}
+#purple {
+  right:0px;
+  bottom:0px;
+   background-color: #63C;
+   position: absolute;
+}
+#footer {
+   background-color: #666;
+  position:relative;
+   margin-left:auto;
+  margin-right:auto;
+   clear : both;
+  top:50%;
+
+}
+h1 {
+   color: #000;
+   font-weight: normal;
+   padding: 50px;
+}
+</style>
+<style type="text/css"></style></head>
+<body>
+   <h1>Classwork 1 - Float</h1>
+   <div id="wrapper">
+      <div id="holder">
+     <div id="red">Red</div>
+      <div id="green">Green</div>
+      <div id="blue">Blue</div>
+      <div id="purple">Purple</div>
+      <div id="footer">Footer</div> 
+    </div>
+    </div>
+</body></html>
