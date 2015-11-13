@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  font-size: 11px;
+}
+tr {
+  padding: 0px;
+}
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+.fixed {
+  font-family: monospace;
+}

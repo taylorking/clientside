@@ -1,0 +1,25 @@
+.row-header{ 
+  background-color: #86FDFE;
+} 
+
+.column-header{ 
+  background-color: #ACFD91;
+} 
+
+.no-caution{
+  background-color: #ACFD91;
+} 
+.caution{
+  background-color: #F9CC57;
+} 
+.extreme-caution{
+  background-color: #F39F19;
+} 
+
+.danger{
+  background-color: #EF4300;
+} 
+
+.extreme-danger{
+  background-color: #C23D00;
+} 

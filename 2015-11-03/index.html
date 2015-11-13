@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body>
+    <h2>
+      Current Weather Conditions</h2>
+    <table>
+      <tr><th>Location</th><th>Boone, NC</th></tr>
+      <tr><td>Time</td><td class="fixed" id="timeBox"></td></tr> 
+      <tr><td>Wind</td><td class="fixed" id="windBox"></td></tr> 
+      <tr><td>Humidity</td><td id="humiBox"></td></tr> 
+      <tr><td>Temperature</td><td id="tempBox"></td></tr> 
+      <tr><td>Today's High</td><td id="highBox"></td></tr> 
+      <tr><td>Today's Low</td><td id="lowBox"></td></tr>  
+      <tr><td>Rain Today</td><td id="rainDayBox"></td></tr> 
+      <tr><td>Rain this month</td><td id="rainBox"></td></tr> 
+      <tr><td>Barometer</td><td id="presBox"></td></tr> 
+      <tr><td class="fixed">Wind Chill</td><td id="chillBox"></td></tr>
+      <tr><td>Heat Index</td><td id="heatBox"></td></tr>
+      <tr><td>Dew Point</td><td id="dewBox"></td></tr>
+      <tr><td colspan=2><input type="button" value="Refresh Conditions" onclick="reloadData();"></td></tr>
+    </table>
+  </body>
+</html>

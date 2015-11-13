@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Dog tricks</title>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script> 
+    <script type="text/javascript" src="dogInteraction.js"></script>
+  </head>
+  <body>
+  <h1>Dog Tricks</h1>
+    <form>
+      <table>
+        <tr><td>Name:</td><td><input type="text" id="nameBox"/></td>
+        <tr>Birthdate: </tr>
+        <tr><td>Year:</td><td><input type="text" id="yearBox"/></td><td>Month:</td><td><input type="text" id="monthBox"/></td><td>Day:</td><td><input type="text" id="dayBox"/></td></tr>
+        <tr><td>Tricks:</td>
+          <td>
+            <select id="tricks" value="idle">
+              <option value="idle">Idle</option>
+              <option value="sit">Sit</option>
+              <option value="fetch">Fetch</option>
+              <option value="shake">Shake</option>
+              <option value="down">Down</option>
+            </select>
+          </td>
+        </tr>
+      </table><br/>
+      <h2>
+        My Dog:
+      </h2><br/>
+      <table>
+        <tr><td>Name: </td><td id="nameOutput"/></tr>
+        <tr><td>Birthday: </td><td id="birthDayOutput"/></tr>
+        <tr><td>Currently is: </td><td id="trickOutput"/></tr>
+      </table>
+    </form>
+    <script type="text/javascript" src="dog.js"></script>
+    </body>
+</html>
+
